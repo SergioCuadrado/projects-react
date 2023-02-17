@@ -1,7 +1,7 @@
-const API_KEY = "4287ad07";
+const API_KEY = '4287ad07';
 
 export const searchMovies = async (search) => {
-  if (search === "") return;
+  if (search === '') return;
 
   try {
     const response = await fetch(
@@ -19,6 +19,6 @@ export const searchMovies = async (search) => {
       };
     });
   } catch (e) {
-    throw new Error("Error searching movies");
+    throw new Error('Error searching movies');
   }
 };
